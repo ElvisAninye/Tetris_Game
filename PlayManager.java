@@ -285,5 +285,36 @@ public class PlayManager {
             g2.drawString("PAUSED", x, y);
         }
 
+
+        x = 38; 
+        y = top_y + 200; 
+        x += 20; 
+        y += top_y + 100;
+
+     // Calculate the dimensions of the white border for the instructions box
+        FontMetrics fontMetrics = g2.getFontMetrics(new Font("Times New Roman", Font.ITALIC, 30));
+        int boxWidth = 350; 
+        int boxHeight = 200; 
+
+
+        //instruction display
+        g2.setColor(Color.WHITE);
+        g2.setStroke(new BasicStroke(2)); // Set the thickness of the border
+        g2.drawRect(x, y, boxWidth, boxHeight);
+
+        // Set the font size for the text inside the box
+        Font instructionFont = new Font("Arial", Font.PLAIN, 25); // Adjust size as needed
+
+       
+        y += 40; //
+        g2.setFont(instructionFont); 
+        g2.drawString("DOWN: S-KEY", x + 10, y); 
+        y += 40; // Increment y-coordinate for the next line
+        g2.drawString("MOVE L/R: KEY A/D", x + 10, y);  
+        y += 40; // Increment y-coordinate for the next line
+        g2.drawString("ROTATE: W KEY", x + 10, y); 
+        y += 40; 
+        g2.drawString("PAUSE: SPACE KEY", x + 10, y); 
+
     }
 }
