@@ -15,17 +15,14 @@ public class Menu {
         Font fnt0 = new Font("arial", Font.BOLD, 50);
         g.setFont(fnt0);
         g.setColor(Color.YELLOW);
-        // Draw title centered horizontally, slightly above the center vertically
         g.drawString("TETRIS", centerX - 180, centerY - 50);
         g.setColor(Color.RED);
         g.drawString("GAME", centerX + 10, centerY - 50);
         g.setColor(Color.WHITE);
         Font fnt1 = new Font("arial", Font.BOLD, 30);
         g.setFont(fnt1);
-        // Draw "Play" centered horizontally within the playButton rectangle
         g.drawString("Play", playButton.x + 19, playButton.y + 35);
         g2d.draw(playButton);
-        // Draw "Quit" centered horizontally within the playButton rectangle
         g.drawString("Quit", quitButton.x + 19, quitButton.y + 35);
         g2d.draw(quitButton);
     }
