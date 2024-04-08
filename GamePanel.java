@@ -66,9 +66,8 @@ public class GamePanel extends JPanel implements Runnable {
     }
 
     private void update() {
-        if (inMenu) {
-            // Add menu update logic if necessary
-        } else {
+        if (inMenu) {} 
+        else {
             if (KeyHandler.pausePressed == false && pm.gameOver == false) {
                 pm.update();
             }
